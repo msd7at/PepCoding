@@ -17,5 +17,5 @@ def prn(s):
 if __name__ == "__main__":
    s=input()
    a=prn(s)
-   a.append(s)
+#    a.append(s)
    print(*a)
