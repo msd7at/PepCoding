@@ -5,6 +5,7 @@ def prn(i,j,n,m):
         return [""]
     h=[]
     v=[]
+    
     if i<n:
         h= prn(i+1,j,n,m)
     if j<m:
@@ -12,8 +13,10 @@ def prn(i,j,n,m):
     path=[]
     for i in h:
         path.append("h"+i)
+        print(path)
     for i in v:
         path.append("v"+i)
+        print(path)
     return path
 
 
@@ -23,3 +26,5 @@ if __name__ == "__main__":
     m=int(input())
     q=prn(0,0,n,m)
     print(q)
+
+
